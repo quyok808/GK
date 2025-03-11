@@ -1,224 +1,225 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
+<html lang="en">
   <head>
+    <!-- basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-      Narrow &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co
-    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-    <meta
-      name="keywords"
-      content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"
-    />
-    <meta name="author" content="FREEHTML5.CO" />
-
-    <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" />
-
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Shop</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700"
       rel="stylesheet"
       type="text/css"
+      href="/static/css/bootstrap.min.css"
     />
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="/static/css/animate.css" />
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="/static/css/icomoon.css" />
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/static/css/bootstrap.css" />
-    <!-- Owl Carousel -->
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/static/css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="/static/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/static/css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3//static/css/font-awesome.css"
+    />
+    <!-- owl stylesheets -->
     <link rel="stylesheet" href="/static/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css" />
-
-    <link rel="stylesheet" href="/static/css/style.css" />
-
-    <!-- Modernizr JS -->
-    <script src="/static/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-      <script src="/static/js/respond.min.js"></script>
-    <![endif]-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
   </head>
   <body>
-    <div class="box-wrap">
-      <%- include("partical/menu"); %>
-      <!-- END: header -->
-      <div
-        id="fh5co-intro-section"
-        class="section-overlay animate-box"
-        data-animate-effect="fadeIn"
-      >
-        <div
-          class="fh5co-intro-cover text-center"
-          data-stellar-background-ratio="0.5"
-          style="background-image: url(/static/images/intro.jpg)"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 float-overlay">
-                <h2>Our Products</h2>
-                <h3>
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics, a large language ocean.
-                </h3>
-              </div>
-            </div>
+    <!--header section start -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo">
+            <a href="/"><img src="/static/images/logo.png" /></a>
           </div>
-        </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/vegetable">VEGETABLES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">CONTACT US</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="search_icon">
+                <a href="#"><img src="/static/images/search-icon.png" /></a>
+              </div>
+            </form>
+          </div>
+        </nav>
       </div>
-      <!-- END fh5co-intro-section -->
-      <div id="fh5co-product-section">
-        <div class="container">
-          <div class="row">
-            <div class="product-inner">
-              <div class="col-md-4 animate-box">
-                <div class="desc">
-                  <h3><a href="#">Product Title</a></h3>
-                  <p>
-                    Separated they live in Bookmarksgrove right at the coast of
-                    the Semantics, a large language ocean. Far far away, behind
-                    the word mountains, far from the countries Vokalia, there
-                    live the blind texts. Separated they live in Bookmarksgrove
-                    right at the coast of the Semantics, a large language ocean.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-8 animate-box">
-                <figure>
-                  <a href="#"
-                    ><img
-                      class="img-responsive"
-                      src="/static/images/product-2.jpg"
-                      alt="product"
-                  /></a>
-                </figure>
-              </div>
-            </div>
-            <div class="product-inner">
-              <div class="col-md-4 col-md-push-8 animate-box">
-                <div class="desc">
-                  <h3><a href="#">Product Title</a></h3>
-                  <p>
-                    Separated they live in Bookmarksgrove right at the coast of
-                    the Semantics, a large language ocean. Far far away, behind
-                    the word mountains, far from the countries Vokalia, there
-                    live the blind texts. Separated they live in Bookmarksgrove
-                    right at the coast of the Semantics, a large language ocean.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-8 col-md-pull-4 animate-box">
-                <figure>
-                  <a href="#"
-                    ><img
-                      class="img-responsive"
-                      src="/static/images/product-3.jpg"
-                      alt="product"
-                  /></a>
-                </figure>
-              </div>
-            </div>
-            <div class="product-inner">
-              <div class="col-md-4 animate-box">
-                <div class="desc">
-                  <h3><a href="#">Product Title</a></h3>
-                  <p>
-                    Separated they live in Bookmarksgrove right at the coast of
-                    the Semantics, a large language ocean. Far far away, behind
-                    the word mountains, far from the countries Vokalia, there
-                    live the blind texts. Separated they live in Bookmarksgrove
-                    right at the coast of the Semantics, a large language ocean.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-8 animate-box">
-                <figure>
-                  <a href="#"
-                    ><img
-                      class="img-responsive"
-                      src="/static/images/product-4.jpg"
-                      alt="product"
-                  /></a>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div id="footer" class="fh5co-border-line">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3 text-center">
-                <p>
-                  Copyright 2016 Free Html5 <a href="#">Narrow</a>. All Rights
-                  Reserved. <br />Made with <i class="icon-heart3 love"></i> by
-                  <a href="http://freehtml5.co/" target="_blank"
-                    >Freehtml5.co</a
-                  >
-                  / Demo Images:
-                  <a href="https://unsplash.com/" target="_blank">Unsplash</a>
-                </p>
-                <p class="fh5co-social-icons">
-                  <a href="#"><i class="icon-twitter-with-circle"></i></a>
-                  <a href="#"><i class="icon-facebook-with-circle"></i></a>
-                  <a href="#"><i class="icon-instagram-with-circle"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-    <!-- END: box-wrap -->
+    <!--header section end -->
+    <div class="about_section">
+      <section class="vegetables_section_2 layout_padding">
+        <div class="container">
+          <h1>Danh sách sản phẩm</h1>
+          <div class="row" id="productList">
+            <% if (products && products.length > 0) { %> <%
+            products.forEach(product => { %>
+            <div class="col">
+              <div class="box_section">
+                <div class="image_4">
+                  <img
+                    src="<%= product.Image || '/static/images/default-product.png' %>"
+                    alt="<%= product.Name %>"
+                  />
+                </div>
+                <h2 class="dolor_text">
+                  $<span style="color: #ebc30a"><%= product.Price %></span>
+                </h2>
+                <h2 class="dolor_text"><%= product.Name %></h2>
+                <h2 class="dolor_text_1"><%= product.Weight || "1 kg" %></h2>
+                <p class="tempor_text">
+                  <%= product.Description || "Sản phẩm chất lượng cao" %>
+                </p>
+                <div class="buy_bt_1"><a href="#">Mua ngay</a></div>
+              </div>
+            </div>
+            <% }); %> <% } else { %>
+            <p>Không có sản phẩm nào.</p>
+            <% } %>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--vegetables section end -->
+    <!--footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="address_text">Address</h1>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/map-icon.png" /><span
+                  class="padding_left_15"
+                  >No.123 Chalingt Gates,</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/call-icon.png" /><span
+                  class="padding_left_15"
+                  >( +01 9876543210 )</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/mail-icon.png" /><span
+                  class="padding_left_15"
+                  >Locations</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="address_text">Social link</h1>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/fb-icon.png" /><span
+                  class="padding_left_15"
+                  >Facebook</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/twitter-icon.png" /><span
+                  class="padding_left_15"
+                  >Twitter</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/instagram-icon.png" /><span
+                  class="padding_left_15"
+                  >Instagram</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/Linkedin-icon.png" /><span
+                  class="padding_left_15"
+                  >Linkedin</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="address_text">Newsletter</h1>
+            <input
+              type="text"
+              class="enter_text"
+              placeholder="Enter Your Email"
+            />
+            <div class="subscribe_bt"><a href="#">subscribe</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer section end -->
+    <!--copyright section start -->
+    <div class="copyright_section">
+      <p class="copyright_text">
+        Copyright 2023 All Right Reserved
+        <a href="https://html.design">Free html Templates</a>
+      </p>
+    </div>
+    <!--copyright section end -->
 
-    <!-- jQuery -->
     <script src="/static/js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="/static/js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="/static/js/bootstrap.min.js"></script>
-    <!-- Owl carousel -->
-    <script src="/static/js/owl.carousel.min.js"></script>
-    <!-- Waypoints -->
-    <script src="/static/js/jquery.waypoints.min.js"></script>
-    <!-- Parallax Stellar -->
-    <script src="/static/js/jquery.stellar.min.js"></script>
-
-    <!-- Main JS (Do not remove) -->
-    <script src="/static/js/main.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery-3.0.0.min.js"></script>
+    <script src="/static/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/static/js/custom.js"></script>
+    <!-- javascript -->
+    <script src="/static/js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   </body>
 </html>

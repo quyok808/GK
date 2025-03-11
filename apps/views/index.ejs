@@ -1,356 +1,643 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
+<html lang="en">
   <head>
+    <!-- basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-      Narrow &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co
-    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-    <meta
-      name="keywords"
-      content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"
-    />
-    <meta name="author" content="FREEHTML5.CO" />
-
-    <!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico" />
-
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Picked Fresh</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700"
       rel="stylesheet"
       type="text/css"
+      href="/static/css/bootstrap.min.css"
     />
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="/static/css/animate.css" />
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="/static/css/icomoon.css" />
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/static/css/bootstrap.css" />
-    <!-- Owl Carousel -->
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/static/css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="/static/images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/static/css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3//static/css/font-awesome.css"
+    />
+    <!-- owl stylesheets -->
     <link rel="stylesheet" href="/static/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css" />
-
-    <link rel="stylesheet" href="/static/css/style.css" />
-
-    <!-- Modernizr JS -->
-    <script src="/static/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
   </head>
   <body>
-    <div class="box-wrap">
-      <%- include("partical/menu"); %>
-      <!-- END: header -->
-      <div
-        class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box"
-        data-animate-effect="fadeIn"
-      >
-        <div class="item">
-          <a href="/static/images/img_large_1.jpg" class="image-popup"
-            ><img src="/static/images/img_large_1.jpg" alt="image"
-          /></a>
-        </div>
-        <div class="item">
-          <a href="/static/images/img_large_2.jpg" class="image-popup"
-            ><img src="/static/images/img_large_2.jpg" alt="image"
-          /></a>
-        </div>
-        <div class="item">
-          <a href="/static/images/img_large_3.jpg" class="image-popup"
-            ><img src="/static/images/img_large_3.jpg" alt="image"
-          /></a>
-        </div>
-        <div class="item">
-          <a href="/static/images/img_large_4.jpg" class="image-popup"
-            ><img src="/static/images/img_large_4.jpg" alt="image"
-          /></a>
-        </div>
-        <div class="item">
-          <a href="/static/images/img_large_5.jpg" class="image-popup"
-            ><img src="/static/images/img_large_5.jpg" alt="image"
-          /></a>
-        </div>
+    <!--header section start -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo">
+            <a href="index.html"><img src="/static/images/logo.png" /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/vegetable">VEGETABLES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">CONTACT US</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="search_icon">
+                <a href="#"><img src="/static/images/search-icon.png" /></a>
+              </div>
+            </form>
+          </div>
+        </nav>
       </div>
-      <div id="fh5co-media-section">
-        <div class="container">
-          <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center heading-section">
-              <h3>Welcome to Narrow</h3>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia, there live the blind texts. Separated they live in
-                Bookmarksgrove right at the coast of the Semantics, a large
-                language ocean.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-7 animate-box">
-              <div
-                class="fh5co-cover"
-                style="background-image: url(images/work-1.jpg)"
-              >
-                <div class="desc">
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
-                  </p>
-                  <span>Web Design</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="fh5co-cover">
-                <div class="fh5co-cover-hero animate-box">
-                  <div
-                    class="fh5co-cover-thumb"
-                    style="background-image: url(/static/images/work-2.jpg)"
-                  ></div>
-                  <div class="desc-thumb">
-                    <p>Far far away, behind the word mountains, far from the</p>
-                    <span>Web Design</span>
-                  </div>
-                </div>
-
-                <div class="fh5co-cover-hero animate-box">
-                  <div
-                    class="fh5co-cover-thumb"
-                    style="background-image: url(/static/images/work-3.jpg)"
-                  ></div>
-                  <div class="desc-thumb">
-                    <p>Far far away, behind the word mountains, far from the</p>
-                    <span>User Experience</span>
-                  </div>
-                </div>
-
-                <div class="fh5co-cover-hero animate-box">
-                  <div
-                    class="fh5co-cover-thumb"
-                    style="background-image: url(/static/images/work-4.jpg)"
-                  ></div>
-                  <div class="desc-thumb">
-                    <p>Far far away, behind the word mountains, far from the</p>
-                    <span>Web Developement</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END fh5co-media-section -->
-      <div id="fh5co-intro-section">
-        <div
-          class="fh5co-intro-cover text-center animate-box"
-          data-animate-effect="fadeIn"
-          data-stellar-background-ratio="0.5"
-          style="background-image: url(/static/images/intro.jpg)"
-        >
-          <a href="#" class="btn">Serving You Is Our First Priority</a>
-        </div>
-      </div>
-      <!-- END fh5co-intro-section -->
-      <div id="fh5co-product-section">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 text-center heading-section animate-box"
-            >
-              <h3>Products</h3>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia, there live the blind texts. Separated they live in
-                Bookmarksgrove right at the coast of the Semantics, a large
-                language ocean.
-              </p>
-            </div>
-          </div>
-          <div class="owl-carousel owl-carousel2">
-            <div class="item animate-box">
-              <a href="/static/images/product-1.jpg" class="image-popup"
-                ><img src="/static/images/product-1.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-2.jpg" class="image-popup"
-                ><img src="/static/images/product-2.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-3.jpg" class="image-popup"
-                ><img src="/static/images/product-3.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-4.jpg" class="image-popup"
-                ><img src="/static/images/product-4.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-1.jpg" class="image-popup"
-                ><img src="/static/images/product-1.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-2.jpg" class="image-popup"
-                ><img src="/static/images/product-2.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-3.jpg" class="image-popup"
-                ><img src="/static/images/product-3.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-4.jpg" class="image-popup"
-                ><img src="/static/images/product-4.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-1.jpg" class="image-popup"
-                ><img src="/static/images/product-1.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-2.jpg" class="image-popup"
-                ><img src="/static/images/product-2.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-3.jpg" class="image-popup"
-                ><img src="/static/images/product-3.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="item animate-box">
-              <a href="/static/images/product-4.jpg" class="image-popup"
-                ><img src="/static/images/product-2.jpg" alt="image"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END fh5co-product-section -->
-      <div id="fh5co-section" class="fh5co-grey-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 animate-box">
-              <div class="fh5co-inner">
-                <i class="icon-shield"></i>
-                <div class="holder-section">
-                  <h3>About Us</h3>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 animate-box">
-              <div class="fh5co-inner">
-                <i class="icon-strategy"></i>
-                <div class="holder-section">
-                  <h3>What We Doe</h3>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 animate-box">
-              <div class="fh5co-inner">
-                <i class="icon-bike"></i>
-                <div class="holder-section">
-                  <h3>Why We Choose Us</h3>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div id="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3 text-center">
-                <p>
-                  Copyright 2016 Free Html5 <a href="#">Narrow</a>. All Rights
-                  Reserved. <br />Made with <i class="icon-heart3 love"></i> by
-                  <a href="http://freehtml5.co/" target="_blank"
-                    >Freehtml5.co</a
-                  >
-                  / Demo Images:
-                  <a href="https://unsplash.com/" target="_blank">Unsplash</a>
-                </p>
-                <p class="fh5co-social-icons">
-                  <a href="#"><i class="icon-twitter-with-circle"></i></a>
-                  <a href="#"><i class="icon-facebook-with-circle"></i></a>
-                  <a href="#"><i class="icon-instagram-with-circle"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-    <!-- END: box-wrap -->
-
-    <!-- jQuery -->
+    <!--header section end -->
+    <!--banner section start -->
+    <div class="banner_section layout_padding">
+      <div class="container">
+        <div id="main_slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="image_1">
+                    <img src="/static/images/img-1.png" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h1 class="banner_taital">
+                    Vegetables <span style="color: #ecad15">Shop</span>
+                  </h1>
+                  <p class="banner_text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem
+                  </p>
+                  <div class="buy_bt"><a href="#">Buy Now</a></div>
+                  <div class="read_bt"><a href="#">Read More</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="image_1">
+                    <img src="/static/images/img-1.png" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h1 class="banner_taital">
+                    Vegetables <span style="color: #ecad15">Shop</span>
+                  </h1>
+                  <p class="banner_text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem
+                  </p>
+                  <div class="buy_bt"><a href="#">Buy Now</a></div>
+                  <div class="read_bt"><a href="#">Read More</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="image_1">
+                    <img src="/static/images/img-1.png" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h1 class="banner_taital">
+                    Vegetables <span style="color: #ecad15">Shop</span>
+                  </h1>
+                  <p class="banner_text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem
+                  </p>
+                  <div class="buy_bt"><a href="#">Buy Now</a></div>
+                  <div class="read_bt"><a href="#">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#main_slider"
+            role="button"
+            data-slide="prev"
+          >
+            <i class=""><img src="/static/images/left-icon.png" /></i>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#main_slider"
+            role="button"
+            data-slide="next"
+          >
+            <i class=""><img src="/static/images/right-icon.png" /></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--banner section end -->
+    <!--about section start -->
+    <div class="about_section layout_padding">
+      <div class="container">
+        <div class="image_2"><img src="/static/images/img-2.png" /></div>
+        <h1 class="about_taital">About Our Shop</h1>
+        <div class="image_3"><img src="/static/images/img-3.png" /></div>
+        <p class="lorem_text">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem
+        </p>
+        <div class="read_bt_1"><a href="#">Read More</a></div>
+      </div>
+      <!--vegetables  section start -->
+      <div class="vegetables_section layout_padding">
+        <div class="container">
+          <div class="image_2"><img src="/static/images/img-2.png" /></div>
+          <h1 class="about_taital">Our Vegetables</h1>
+          <p class="lorem_text">
+            Reader will be distracted by the readable content of a
+          </p>
+          <div class="vegetables_section_2 layout_padding">
+            <div class="row">
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-4.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Tomato</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1 active"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-5.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Cabbage</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-6.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Eggplant</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-7.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Lady-finger</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-8.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Bottle-Gourd</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-9.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Potato</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-10.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Capsicum</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-11.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Pumpkin-Patch</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-12.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Green chilli</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="box_section">
+                  <div class="image_4">
+                    <img src="/static/images/img-13.png" />
+                  </div>
+                  <h2 class="dolor_text">
+                    $<span style="color: #ebc30a">10</span>
+                  </h2>
+                  <h2 class="dolor_text">Kof-Radish</h2>
+                  <h2 class="dolor_text_1">1 kg</h2>
+                  <p class="tempor_text">
+                    adipiscing elit, sed do eiusmod tempor
+                  </p>
+                  <div class="buy_bt_1"><a href="#">Buy Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="read_bt_1"><a href="#">Read More</a></div>
+        </div>
+      </div>
+      <!--vegetables section end -->
+    </div>
+    <!--about section end -->
+    <!--choose section start -->
+    <div class="choose_section layout_padding">
+      <div class="container">
+        <div class="image_2"><img src="/static/images/img-2.png" /></div>
+        <h1 class="about_taital">Why Choose Us</h1>
+        <div class="image_3"><img src="/static/images/img-14.png" /></div>
+        <p class="lorem_text">
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation
+        </p>
+        <div class="read_bt_1"><a href="#">Read More</a></div>
+      </div>
+    </div>
+    <!--choose section end -->
+    <!--testimonial section start -->
+    <div class="testimonial_section layout_padding">
+      <div class="container">
+        <div id="my_slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="image_2"><img src="/static/images/img-2.png" /></div>
+              <h1 class="about_taital">Testimonial</h1>
+              <div class="testimonial_main">
+                <div class="client_main">
+                  <div class="client_left">
+                    <div>
+                      <img
+                        src="/static/images/client-img.png"
+                        class="client_img"
+                      />
+                    </div>
+                  </div>
+                  <div class="client_right">
+                    <h4 class="magna_text">Magna</h4>
+                    <p class="consectetur_text">Consectetur adipiscing</p>
+                  </div>
+                </div>
+                <p class="ipsum_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrudLorem ipsum
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image_2"><img src="/static/images/img-2.png" /></div>
+              <h1 class="about_taital">Testimonial</h1>
+              <div class="testimonial_main">
+                <div class="client_main">
+                  <div class="client_left">
+                    <div>
+                      <img
+                        src="/static/images/client-img.png"
+                        class="client_img"
+                      />
+                    </div>
+                  </div>
+                  <div class="client_right">
+                    <h4 class="magna_text">Magna</h4>
+                    <p class="consectetur_text">Consectetur adipiscing</p>
+                  </div>
+                </div>
+                <p class="ipsum_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrudLorem ipsum
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image_2"><img src="/static/images/img-2.png" /></div>
+              <h1 class="about_taital">Testimonial</h1>
+              <div class="testimonial_main">
+                <div class="client_main">
+                  <div class="client_left">
+                    <div>
+                      <img
+                        src="/static/images/client-img.png"
+                        class="client_img"
+                      />
+                    </div>
+                  </div>
+                  <div class="client_right">
+                    <h4 class="magna_text">Magna</h4>
+                    <p class="consectetur_text">Consectetur adipiscing</p>
+                  </div>
+                </div>
+                <p class="ipsum_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrudLorem ipsum
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#my_slider"
+            role="button"
+            data-slide="prev"
+          >
+            <i class=""><img src="/static/images/left-icon1.png" /></i>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#my_slider"
+            role="button"
+            data-slide="next"
+          >
+            <i class=""><img src="/static/images/right-icon1.png" /></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--testimonial section end -->
+    <!--contact section start -->
+    <div class="contact_section layout_padding">
+      <div class="container">
+        <div class="image_2"><img src="/static/images/img-2.png" /></div>
+        <h1 class="about_taital">Contact Us</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mail_sectin">
+              <input
+                type="text"
+                class="email-bt"
+                placeholder="Your Name"
+                name="Name"
+              />
+              <input
+                type="text"
+                class="email-bt"
+                placeholder="Email"
+                name="Name"
+              />
+              <input
+                type="text"
+                class="email-bt"
+                placeholder="Phone Number"
+                name="Name"
+              />
+              <textarea
+                class="massage-bt"
+                placeholder="Massage"
+                rows="5"
+                id="comment"
+                name="Massage"
+              ></textarea>
+              <div class="send_bt"><a href="#">Send</a></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="map_main">
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                  width="600"
+                  height="480"
+                  frameborder="0"
+                  style="border: 0; width: 100%"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--contact section end -->
+    <!--footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="address_text">Address</h1>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/map-icon.png" /><span
+                  class="padding_left_15"
+                  >No.123 Chalingt Gates,</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/call-icon.png" /><span
+                  class="padding_left_15"
+                  >( +01 9876543210 )</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/mail-icon.png" /><span
+                  class="padding_left_15"
+                  >Locations</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="address_text">Social link</h1>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/fb-icon.png" /><span
+                  class="padding_left_15"
+                  >Facebook</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/twitter-icon.png" /><span
+                  class="padding_left_15"
+                  >Twitter</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/instagram-icon.png" /><span
+                  class="padding_left_15"
+                  >Instagram</span
+                ></a
+              >
+            </div>
+            <div class="location_text">
+              <a href="#"
+                ><img src="/static/images/Linkedin-icon.png" /><span
+                  class="padding_left_15"
+                  >Linkedin</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="address_text">Newsletter</h1>
+            <input
+              type="text"
+              class="enter_text"
+              placeholder="Enter Your Email"
+            />
+            <div class="subscribe_bt"><a href="#">subscribe</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer section end -->
+    <!--copyright section start -->
+    <div class="copyright_section">
+      <p class="copyright_text">
+        Copyright 2023 All Right Reserved
+        <a href="https://html.design">Free html Templates</a>
+      </p>
+    </div>
+    <!--copyright section end -->
+    <!-- Javascript files-->
     <script src="/static/js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="/static/js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="/static/js/bootstrap.min.js"></script>
-    <!-- Owl carousel -->
-    <script src="/static/js/owl.carousel.min.js"></script>
-    <!-- Waypoints -->
-    <script src="/static/js/jquery.waypoints.min.js"></script>
-    <!-- Parallax Stellar -->
-    <script src="/static/js/jquery.stellar.min.js"></script>
-
-    <!-- Main JS (Do not remove) -->
-    <script src="/static/js/main.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery-3.0.0.min.js"></script>
+    <script src="/static/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/static/js/custom.js"></script>
+    <!-- javascript -->
+    <script src="/static/js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   </body>
 </html>

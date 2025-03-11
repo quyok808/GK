@@ -35,12 +35,28 @@ router.get("/", async function (req, res) {
 // **GET - API endpoint to get the full list of products for the product page, client-side rending.**
 router.get("/product-list", async function (req, res) {
   try {
-    const productService = new ProductService();
-    const products = await productService.getProductList();
-    res.json(products);
+    const productService = new ProductService(); // Create a new instance
+
+    // Wait for initialization to complete
+    await new Promise((resolve, reject) => {
+      const timeout = setTimeout(() => {
+        reject(new Error("ProductService initialization timed out"));
+      }, 5000);
+
+      const checkInterval = setInterval(() => {
+        if (productService.isInitialized) {
+          clearInterval(checkInterval);
+          clearTimeout(timeout);
+          resolve();
+        }
+      }, 50);
+    });
+
+    const products = await productService.getProductList(); // Get the products
+    res.json(products); // Send the JSON response
   } catch (error) {
     console.error("Error in API endpoint:", error);
-    res.status(500).json({ error: "Lỗi server" });
+    res.status(500).json({ error: "Lỗi server", message: error.message }); // Include error message
   }
 });
 

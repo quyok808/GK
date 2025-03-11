@@ -41,9 +41,3 @@ async function connectToDatabase() {
 }
 
 connectToDatabase(); // Call the async function
-
-// Example of how to access the database in a route (inside controller file)
-// app.get('/users', async (req, res) => {
-//   const users = await req.app.locals.db.collection('users').find().toArray();
-//   res.json(users);
-// });
